@@ -1,0 +1,25 @@
+You have been provided with the following files:
+
+a sqlite database | edgered.db
+
+sql script with table definitions | create_tables.sql
+
+sample output which you will need to replicate | sample-output.json
+
+Your task is to write a program that achieves the following:
+
+1) Extracts the data out of the sqlite database.
+
+2) Transforms the data into the desired form as shown in sample-output.json but on the entire dataset.  The final output must be exactly the same format. 
+
+3) Writes the data into a json file.
+
+4) You are required to use python but are free to use any other packages and/or tools you wish. You will also have to calculate each of the summary fields in sample-output.json
+
+
+Additionally:
+5) The path to the database, and the path to the output file must be configured via command line argument.
+
+6) The payment_amt in the payments table is in cents.
+
+7) The transaction_date in the payments table is in epoch timestamp.
